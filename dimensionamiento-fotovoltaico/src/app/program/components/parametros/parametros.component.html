@@ -1,0 +1,13 @@
+<h2>Ingrese los parámetros para el dimensionamiento fotovoltaico</h2>
+
+<form>
+  <div>
+    <label>Potencia deseada (en kW):</label>
+    <input type="number" [(ngModel)]="potenciaDeseada" name="potenciaDeseada">
+  </div>
+  <div>
+    <label>Eficiencia de los paneles solares:</label>
+    <input type="number" [(ngModel)]="eficienciaPaneles" name="eficienciaPaneles">
+  </div>
+  <button (click)="calcular()">Calcular</button>
+</form>
